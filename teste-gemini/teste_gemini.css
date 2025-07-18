@@ -1,0 +1,129 @@
+/* Reset Básico e Fontes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* 1. Estilo do Cabeçalho */
+.main-header {
+    display: flex;
+    justify-content: space-between; /* Alinha logo à esquerda e nav à direita */
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.main-header h1 {
+    color: #ff6347; /* Tomate */
+}
+
+.main-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+/* 2. Estilo do Banner Principal */
+.hero-banner {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ff6347;
+    color: white;
+}
+
+.hero-banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.btn-cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: white;
+    color: #ff6347;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #f0f0f0;
+}
+
+/* 3. Estilo do Cardápio */
+.product-menu {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center;
+    gap: 20px; /* Espaço entre os cards */
+    margin-top: 30px;
+}
+
+.product-card {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden; /* Garante que a imagem não saia do card arredondado */
+    text-align: left;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+.product-price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #2ecc71; /* Verde */
+    margin-top: 15px;
+}
+
+.btn-add {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #3498db; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+    background-color: #2980b9;
+}
+
+/* 5. Estilo do Rodapé */
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #333;
+    color: white;
+}
