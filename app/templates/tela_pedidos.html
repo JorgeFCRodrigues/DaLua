@@ -1,30 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Da Lua</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/style.css">
 </head>
-<body>
-    
-    <header class="main-header">
-        <div class="logo">
+
+<body id="tela-principal">
+
+    <header>
+        <div class="logoDaLua">
             <h1>Da Lua</h1>
         </div>
-        <nav class="main-nav">
-            <div class="pedidos">
-                <button class="btn-add">Novo pedido</button>
-                <button class="btn-add">Excluir pedido</button>
-            </div>    
-        </nav>
+        <div class="container-botoes">
+            <button class="btn-novopedido">Novo Pedido</button>
+            <button class="btn-excluirpedido">Excluir Pedido</button>
+        </div>
     </header>
 
-    <main id="menu" class="product-grid">
-        <div class="container-novospedidos">
-            <h1>Novos Pedidos.</h1>
+    <div class="painel-pedidos">
+
+        <div class="coluna-status" id="recebidos">
+            <h2 class="titulo-coluna">Recebidos</h2>
+
+            <div class="card-pedido">
+                <div class="card-header">
+                    <span class="numero-pedido">Pedido #123</span>
+                    <span class="hora-pedido">12:12</span>
+                </div>
+                <div class="card-body">
+                    <p class="nome-cliente">Cliente: Jorge Fernando</p>
+                    <ul class="lista-itens">
+                        <li>1x Pizza de Calabresa</li>
+                        <li>1x Refrigerante Coca-Cola</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-pedido">
+                <div class="card-header">
+                    <span class="numero-pedido">Pedido #124</span>
+                    <span class="hora-pedido">12:15</span>
+                </div>
+                <div class="card-body">
+                    <p class="nome-cliente">Cliente: Leonardo</p>
+                    <ul class="lista-itens">
+                        <li>1x Pizza de Portuguesa</li>
+                        <li>1x Refrigerante Guaraná</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </main>
+
+        <div class="coluna-status" id="em-preparo">
+            <h2 class="titulo-coluna">Em Preparo</h2>
+
+            <div class="card-pedido">
+                <div class="card-header">
+                    <span class="numero-pedido">Pedido #122</span>
+                    <span class="hora-pedido">12:10</span>
+                </div>
+                <div class="card-body">
+                    <p class="nome-cliente">Cliente: Flávia</p>
+                    <ul class="lista-itens">
+                        <li>1x Pizza de Catupiri</li>
+                        <li>1x Refrigerante Guaraná</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="coluna-status" id="prontos">
+            <h2 class="titulo-coluna">Pronto para Retirada</h2>
+
+            <div class="card-pedido">
+                <div class="card-header">
+                    <span class="numero-pedido">Pedido #120</span>
+                    <span class="hora-pedido">12:00</span>
+                </div>
+                <div class="card-body">
+                    <p class="nome-cliente">Cliente: João</p>
+                    <ul class="lista-itens">
+                        <li>1x Pizza de Mussarela</li>
+                        <li>1x Refrigerante Sprite</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
