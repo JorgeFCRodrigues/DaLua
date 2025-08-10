@@ -9,13 +9,15 @@
 
 <body id="tela-principal">
 
+<div id="starfield-root" aria-hidden="true">
+  <canvas id="starfield-canvas"></canvas>
+  <div id="starfield-overlay"></div>
+</div>
+
+
     <header>
         <div class="logoDaLua">
             <h1>Da Lua</h1>
-        </div>
-        <div class="container-botoes">
-            <button class="btn-novopedido">Novo Pedido</button>
-            <button class="btn-excluirpedido">Excluir Pedido</button>
         </div>
     </header>
 
@@ -30,7 +32,7 @@
                     <span class="hora-pedido">12:12</span>
                 </div>
                 <div class="card-body">
-                    <p class="nome-cliente">Cliente: Jorge Fernando</p>
+                    <p class="nome-cliente" draggable="true">Cliente: Jorge Fernando</p>
                     <ul class="lista-itens">
                         <li>1x Pizza de Calabresa</li>
                         <li>1x Refrigerante Coca-Cola</li>
@@ -89,6 +91,9 @@
         </div>
 
     </div>
+
+
+<script src="../static/starfield.js"></script>
 
 </body>
 </html>
